@@ -1,0 +1,19 @@
+<div class="row" style="margin: 15px;">
+    <h3>{{titulo}}</h3>
+        <form >
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" [(ngModel)]="item.nombre" name="nombre">
+            </div>
+            <div class="mb-3">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" [(ngModel)]="item.apellido" name="apellido" >
+              </div>
+              <div class="mb-3">
+                <label for="gmail" class="form-label">Gmail</label>
+                <input type="text" class="form-control" [(ngModel)]="item.gmail" name="gmail">
+              </div>
+            <button (click)="closeModal()" class="btn btn-primary">Guardar</button>
+          </form>
+    </div>
+
